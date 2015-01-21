@@ -1,11 +1,8 @@
 #main {
-  @include outer-container;
   section {
+    @include outer-container;
     .full-container {
       @include span-columns(12);
-    }
-    .split-container {
-      @include span-columns(6);
     }
     .thirds-container {
       @include span-columns(4);

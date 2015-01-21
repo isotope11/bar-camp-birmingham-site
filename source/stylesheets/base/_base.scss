@@ -6,6 +6,8 @@
 // Variables
 @import "variables";
 
+@import "grid-settings";
+
 // Extends
 @import "extends/button";
 @import "extends/clearfix";
@@ -20,9 +22,3 @@
 @import "lists";
 @import "buttons";
 
-// Components and Partial Groups 
-@import "components/layout";
-@import "components/map";
-@import "components/sponsors";
-@import "components/header";
-@import "components/footer";
