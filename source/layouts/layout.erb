@@ -16,11 +16,11 @@
   </head>
   
   <body class="<%= page_classes %>">
+    <%= partial "partials/header" %>
     <div id="main" role="main">
-      <%= partial "partials/header" %>
       <%= yield %>
-      <%= partial "partials/footer" %>    
     </div>
+    <%= partial "partials/footer" %>    
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
     <%= javascript_include_tag "map" %>
   </body>

@@ -6,6 +6,31 @@
     text-align: left;
     @include span-columns(6);  
   }
+  @include media($large-screen-up) {
+    text-align: left;
+    @include span-columns(6);  
+    @include omega;  
+  }
+}
+.next-date{
+  text-align: center;
+  @include media($large-screen-up) {
+    text-align: left;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.25em;
+  }
+  p{
+    padding: 1em 0;
+  }
+  button{
+    padding: 1em;
+    border-radius: 20px;
+    text-align: center;
+  }
 }
 .video-container{
   @include media($large-screen-up) {
