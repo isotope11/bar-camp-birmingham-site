@@ -5,11 +5,12 @@
   @include media($large-screen-up) {
     text-align: left;
     @include span-columns(6);  
-    @include omega;  
   }
 }
 .video-container{
-  padding-right: 1em;
+  @include media($large-screen-up) {
+    padding-right: 1em;
+  }
   .responsive-wrapper{
     position: relative;
     width: 100%;
