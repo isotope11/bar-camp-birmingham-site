@@ -1,5 +1,6 @@
 #main {
-  padding: 0 1em;
+  background-color: #fff;
+  padding: 0 1em 1em;
   section {
     @include outer-container;
     .full-container {
