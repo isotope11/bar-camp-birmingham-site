@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 @import "bourbon";
-@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "base/base"; 
 @import "neat";
-@import "partials/layout";
-@import "partials/map";
-@import "partials/sponsors";
-@import "partials/footer";
+
+// Components and Partial Groups 
+@import "components/layout";
+@import "components/index";
+@import "components/map";
+@import "components/sponsors";
+@import "components/header";
+@import "components/footer";

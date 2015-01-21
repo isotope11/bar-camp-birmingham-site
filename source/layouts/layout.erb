@@ -8,6 +8,8 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
@@ -15,9 +17,10 @@
   
   <body class="<%= page_classes %>">
     <div id="main" role="main">
+      <%= partial "partials/header" %>
       <%= yield %>
-      <%= partial "partials/footer" %>    
     </div>
+    <%= partial "partials/footer" %>    
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
     <%= javascript_include_tag "map" %>
   </body>
